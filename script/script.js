@@ -4,11 +4,14 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data
 const collectEmployees = function () {
   // TODO: Get user input to create and return an array of employee objects
+  // I added the code and saved the employee first and last name and salary into the array and pushed it so it would print 
   const employeesArray = []
-  let employeeName = window.prompt('Enter employee name')
+  let employeeFirstName = window.prompt('Enter employee first name')
+  let employeeLastName = window.prompt('Enter employee last name')
   let employeeSalary = window.prompt('Enter employee salary')
   let employeeInfo = {
-    name: employeeName,
+    firstName: employeeFirstName,
+    lastName: employeeLastName,
     salary: employeeSalary,
   }
   employeesArray.push(employeeInfo)
