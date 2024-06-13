@@ -7,17 +7,17 @@ const collectEmployees = function () {
   // I added the code and saved the employee first and last name and salary into the array and pushed it so it would print 
   const employeesArray = []
 
-  while (true) { //made changes to the while loop adding let and if to the statements and adding ===null to break if not complete 
+  while (true) {
     let employeeFirstName = window.prompt('Enter employee first name');
     if (employeeFirstName === null) break;
 
     let employeeLastName = window.prompt('Enter employee last name');
-    if (employeeLastName === null) break; //made changes seperating my code to make it where if you dont put in a name or anything it will break the line code 
+    if (employeeLastName === null) break;
 
     let employeeSalaryInput = window.prompt('Enter employee salary');
     if (employeeSalaryInput === null) break;
 
-    let employeeSalary = parseFloat(employeeSalaryInput); //changed to make this a numeric value only if not then alert to put in a numeric value only 
+    let employeeSalary = parseFloat(employeeSalaryInput);
     if (isNaN(employeeSalary)) {
       alert("Please enter a valid number for the salary.");
       continue;
@@ -45,7 +45,25 @@ const collectEmployees = function () {
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
+  if (employeesArray.length === 0) { //set value for console to print nothing to calculate if no employees are ther e
+    console.log("No employees to calculate average salary.");
+    return;
+  }
+
+  let totalSalary = 0; //set default value to 0 for a baseline
+
+  for (let i = 0; i < employeesArray.length; i++) { //I added this loop to start with i set to "0" then i will look at employee array in increments on 1 until there isnt any more in the array
+    totalSalary += employeesArray[i].salary;
+  }
+
+  let averageSalary = totalSalary / employeesArray.length;
+  console.log(`The average salary is ${averageSalary.toLocaleString("en-US", { style: "currency", currency: "USD" })}`);
 }
+
+
+
+
+
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
