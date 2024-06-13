@@ -32,3 +32,8 @@ https://jjackson0228.github.io/Employee-Payroll/ This one takes you to live page
     - style.css
     - script.js
     - Github
+
+###### Code source 
+I used the Xpert Learning Assistant to help with the math function for math.floor and math.random in line 71 of script.js
+
+I used ChatGPT to help structure lines 10-24 in script.js to make it a better loop.
