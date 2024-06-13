@@ -6,17 +6,40 @@ const collectEmployees = function () {
   // TODO: Get user input to create and return an array of employee objects
   // I added the code and saved the employee first and last name and salary into the array and pushed it so it would print 
   const employeesArray = []
-  let employeeFirstName = window.prompt('Enter employee first name')
-  let employeeLastName = window.prompt('Enter employee last name')
-  let employeeSalary = window.prompt('Enter employee salary')
-  let employeeInfo = {
-    firstName: employeeFirstName,
-    lastName: employeeLastName,
-    salary: employeeSalary,
+
+  while (true) { //made changes to the while loop adding let and if to the statements and adding ===null to break if not complete 
+    let employeeFirstName = window.prompt('Enter employee first name');
+    if (employeeFirstName === null) break;
+
+    let employeeLastName = window.prompt('Enter employee last name');
+    if (employeeLastName === null) break; //made changes seperating my code to make it where if you dont put in a name or anything it will break the line code 
+
+    let employeeSalaryInput = window.prompt('Enter employee salary');
+    if (employeeSalaryInput === null) break;
+
+    let employeeSalary = parseFloat(employeeSalaryInput); //changed to make this a numeric value only if not then alert to put in a numeric value only 
+    if (isNaN(employeeSalary)) {
+      alert("Please enter a valid number for the salary.");
+      continue;
+    }
+
+    let employeeInfo = {
+      firstName: employeeFirstName,
+      lastName: employeeLastName,
+      salary: employeeSalary,
+    };
+
+    employeesArray.push(employeeInfo);
+
+    let addAnother = window.prompt('Do you want to add another employee? (yes/no)');
+    if (addAnother === null || addAnother.toLowerCase() !== 'yes') {
+      break;
+    }
   }
-  employeesArray.push(employeeInfo)
-  return employeesArray
-}
+  return employeesArray;
+};
+
+
 
 
 // Display the average salary
