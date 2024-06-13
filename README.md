@@ -5,7 +5,8 @@ Project to write a code in javascript to log employee first and last name and sa
 ## Screenshots
 
 ### Links
-
+https://github.com/jjackson0228/Employee-Payroll This one takes you to repository.
+https://jjackson0228.github.io/Employee-Payroll/ This one takes you to live page application.
 
 #### How to use App 
     1. Click on the add employee box.
