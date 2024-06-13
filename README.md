@@ -7,7 +7,7 @@ Project to write a code in javascript to log employee first and last name and sa
  - The prompt will ask for a first name. Enter first name.![prompt asking for first name](<images/Screenshot 2024-06-13 at 4.13.29 PM.png>)
  - The prompt will now ask for a last name. Enter last name.![prompt asking for last name](<images/Screenshot 2024-06-13 at 4.13.56 PM.png>)
  - The prompt will now ask for a salary. Enter salary amount. You don't need to use decimals it will convert it automatically.![prompt asking for salary](<images/Screenshot 2024-06-13 at 4.15.03 PM.png>)
- ![prompt asking to add another employee](<images/Screenshot 2024-06-13 at 4.15.27 PM.png>)
+ - The prompt will ask if you wan't to add another name.![prompt asking to add another employee](<images/Screenshot 2024-06-13 at 4.15.27 PM.png>)
 - If you say no the webpage will only show the one first, last name and salary.![one name and salary](<images/Screenshot 2024-06-13 at 4.15.44 PM.png>)
 - If you say yes and add more names it'll show them on the table. ![3 names and salaries](<images/Screenshot 2024-06-13 at 4.22.26 PM.png>)
 - You can right click and inspect the console to show the average salary and random winner.![showing console](<images/Screenshot 2024-06-13 at 4.30.25 PM.png>)
