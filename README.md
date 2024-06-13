@@ -1,6 +1,6 @@
 # Employee-Payroll
 
-Project to write a code in javascript to log employee first and last name and salary into the table HTML pre-written code. 
+Project to write a code in javascript to log employee first and last name and salary into the table HTML pre-written code. Added code to make a loop to add a first name and a last name and salary into a table with a salary with a USD and decimal points added even if typed without them. When adding more than one name and salary I made a code to get the average salary of everyone entered into the payroll tracker. It is shown in the inspect page and in the console log. I also added a code to pick a random winner of all the names entered. It is also shown in the console log if you right click and inspect the page.
 
 ## Screenshots
  - Click on the add employee box.![homepage](<images/Screenshot 2024-06-13 at 4.08.20 PM-1.png>)
@@ -10,7 +10,7 @@ Project to write a code in javascript to log employee first and last name and sa
  - The prompt will ask if you wan't to add another name.![prompt asking to add another employee](<images/Screenshot 2024-06-13 at 4.15.27 PM.png>)
 - If you say no the webpage will only show the one first, last name and salary.![one name and salary](<images/Screenshot 2024-06-13 at 4.15.44 PM.png>)
 - If you say yes and add more names it'll show them on the table. ![3 names and salaries](<images/Screenshot 2024-06-13 at 4.22.26 PM.png>)
-- You can right click and inspect the console to show the average salary and random winner.![showing console](<images/Screenshot 2024-06-13 at 4.30.25 PM.png>)
+- You can right click and inspect the page then go to the console to show the average salary and random winner.![showing console](<images/Screenshot 2024-06-13 at 4.30.25 PM.png>)
 
 
 ### Links
